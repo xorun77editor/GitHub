@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 4000px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1000000000;
+  background-color: aqua;
+}
+
+.header-wrapper {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box1 {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: red;
+  z-index: 999;
+  border: 1px solid black;
+}
+
+.box2 {
+  bottom: -50px;
+  right: -50px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  z-index: 1000;
+}
